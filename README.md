@@ -3,7 +3,7 @@
 
 [![DOI:10.1016/j.eswa.2020.113198](http://img.shields.io/badge/DOI-10.1016/j.eswa.2020.113198-1589F0.svg)](https://doi.org/10.1016/j.eswa.2020.113198)
 
-<p> :fire: Text classification based on incremental learning :fire: </p>
+:fire: Text classification based on incremental learning :fire:
 
 ### :bookmark: introduction
 [![-----------------------------------------------------]( 
