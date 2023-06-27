@@ -1,7 +1,7 @@
-# learn-
+# :zap:A Novel incremental learning method for text classification:zap:
 
-<img alt="ALT test" src="https://github.com/ImMohammadHosseini/incremental-learning/tree/main/images/1.png">
+## introduction
 
 ![The structure](images/1.png)
 
-
+##
