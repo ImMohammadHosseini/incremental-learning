@@ -21,4 +21,17 @@ benefits of inceremental learning:
 
 ![The structure](images/1.png)
 
-### :bookmark: 
+### :bookmark: method
+
+[![-----------------------------------------------------]( 
+https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/ImMohammadHosseini/incremental-learning?tab=repositories)
+
+this project consists of four components: Student model, a reinforcement learning (RL) module, a Teacher model, and a discriminator model.
+
+#### Student model
+
+#### Reinforcement Learning Module
+
+#### Teacher Model
+
+#### Discriminator Modelll
