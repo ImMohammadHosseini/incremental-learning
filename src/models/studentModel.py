@@ -8,18 +8,22 @@ from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.layers import Input
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
+import tensorflow_hub as hub
 
 class StudentModel(Model):
     def __init__(
         self, 
-        preprossesor, 
-        bert_layer,
+        preprocessor_path, 
+        bert_path,
         class_num,
         max_len:int = 512,
         
     ):
         super().__init__()
-        self.bert_inputs= preprossesor
+        
+        bert_layer = hub.KerasLayer(bert_path, trainable=True)
+        bert_preprocess_model = hub.KerasLayer(preprocessor_path)
+        self.bert_inputs= bert_preprocess_model
         self.bert_layer = bert_layer
         
         self.dense1 = Dense(16, activation='relu')
