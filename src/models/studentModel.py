@@ -9,19 +9,32 @@ from tensorflow.keras.layers import Input
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 
-def student_model(preprossesor, bert_layer, max_len=512): 
-    inp= Input(shape=(), dtype=tf.string)
-    bert_inputs= preprossesor(inp)
-    outputs = bert_layer(bert_inputs)#pooled_output, sequence_output
-    x= outputs['pooled_output']
+class StudentModel(Model):
+    def __init__(
+        self, 
+        preprossesor, 
+        bert_layer,
+        class_num,
+        max_len:int = 512,
+        
+    ):
+        super().__init__()
+        self.bert_inputs= preprossesor
+        self.bert_layer = bert_layer
+        
+        self.dense1 = Dense(16, activation='relu')
+        self.dropout1 = Dropout(0.2)
+        self.dense2 = Dense(8, activation='relu')
+        self.dropout2 = Dropout(0.2)
+        self.out = Dense(class_num, activation='softmax')
+        
+    def call(self, inputs):
+        x = self.bert_inputs(inputs)
+        x = self.bert_layer(x)
+        x = x['pooled_output']
 
-    x= Dense(16, activation='relu')(x)
-    x= Dropout(0.2)(x)
-    x= Dense(8, activation='relu')(x)
-    x= Dropout(0.2)(x)
-    out= Dense(class_num, activation='softmax')(x)
-
-    model= Model(inputs=inp, outputs=out)
-    model.compile(Adam(learning_rate=1e-5), loss='categorical_crossentropy', metrics=['accuracy'])
-    
-    return model
+        x = self.dense1(x)
+        x = self.dropout1(x)
+        x = self.dense2(x)
+        x = self.dropout2(x)
+        return self.out(x)
