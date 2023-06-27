@@ -1,7 +1,7 @@
-# :zap:A Novel incremental learning method for text classification:zap:
+## :zap:A Novel incremental learning method for text classification:zap:
 
-## introduction
+### introduction
 
 ![The structure](images/1.png)
 
-##
+###
