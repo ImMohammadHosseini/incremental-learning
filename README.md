@@ -1,5 +1,7 @@
 # learn-
 
-<p>![The structure](https://github.com/ImMohammadHosseini/incremental-learning/tree/main/images/1.pn)</p>
+<img alt="ALT test" src="https://github.com/ImMohammadHosseini/incremental-learning/tree/main/images/1.png">
+
+![The structure](https://github.com/ImMohammadHosseini/incremental-learning/tree/main/images/1.png)
 
 
