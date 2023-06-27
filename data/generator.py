@@ -5,7 +5,7 @@
 import numpy as np
 import tensorflow as tf
 
-class Custom_Generator(tf.keras.utils.Sequence) :
+class CustomGenerator(tf.keras.utils.Sequence) :
   
     def __init__(self, directory, filenames, labels, batch_size, max_len=512):
         self.directory= directory
