@@ -14,6 +14,10 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 1. Second, it is difficult to obtain total sufficient labeled samples for text classification with deep learning at the beginning because the labeling cost is prohibitively expensive or they do not occur frequently enough to be collected
 1. model performances highly depend on the distribution of the data samples. The distribution of the previous datasets might differ from that of the newly collected data, which might lead to overfitting.
 
+to address thesee problems incremental learning is used.
+
+benefits of inceremental learning:
+1.when new samples are added, there is no need to retrain with all samples.
 
 ![The structure](images/1.png)
 
