@@ -62,4 +62,5 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
 [![-----------------------------------------------------]( 
 https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/ImMohammadHosseini/incremental-learning?tab=repositories)
+
 Shan, G., Xu, S., Yang, L., Jia, S., & Xiang, Y. (2020). Learn#: A Novel incremental learning method for text classification. Expert Systems with Applications, 147, 113198.
