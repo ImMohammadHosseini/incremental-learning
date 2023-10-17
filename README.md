@@ -30,6 +30,7 @@ https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 this project consists of four components: Student model, a reinforcement learning (RL) module, a Teacher model, and a discriminator model.
 
 #### Student model
+Student models are deep learning models that are used to solve classification tasks. In this project, the pre-trained Bert model was utilized, followed by feeding the inputs to multilayer LSTM models. The input categories were then classified using softmax activation functions. The feature vectors of the text representations are captured in the vector of the last layer.
 
 #### Reinforcement Learning Module
 
