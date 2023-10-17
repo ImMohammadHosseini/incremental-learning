@@ -50,3 +50,9 @@ classification results. On the other hand, it is an easy-to-use and non-parametr
 data and the amount of the input data is small, while the speed of calculation is repaid and the model’s performance is robust.
 
 #### Discriminator Modelll
+
+[![-----------------------------------------------------]( 
+https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)](https://github.com/ImMohammadHosseini/incremental-learning?tab=repositories)
+
+### :bookmark: train algorithm
+![The structure](images/train_process.png)
